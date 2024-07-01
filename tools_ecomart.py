@@ -13,7 +13,9 @@ cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 modelo = "gpt-4-1106-preview"
 
 minhas_tools = [
-    {"type": "retrieval"},
+    {
+        "type": "retrieval"
+    },
     {
       "type": "function",
             "function": {
